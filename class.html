@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neha Gaikwad Portfolio</title>
+" rel="stylesheet">
+
+     
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      height: 100vh;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      font-size: 22px;
+      color: #cbd5e1;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+      transform: scale(1.05);
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.95);
+      padding: 15px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav h2 {
+      color: #38bdf8;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    /* Sections */
+    section {
+      padding: 90px 10%;
+    }
+
+    .section-title {
+      font-size: 38px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: #38bdf8;
+    }
+
+    /* About */
+    .about-box {
+      background: #1e293b;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+    }
+
+    /* Skills */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 15px 30px;
+      border-radius: 10px;
+      transition: 0.3s;
+      border: 1px solid #334155;
+    }
+
+    .skill:hover {
+      background: #38bdf8;
+      color: #0f172a;
+      transform: translateY(-5px);
+    }
+
+    /* Projects */
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 15px;
+      transition: 0.3s;
+      border: 1px solid #334155;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+    }
+
+    .project-card h3 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    /* Contact */
+    .contact-box {
+      text-align: center;
+      background: #1e293b;
+      padding: 40px;
+      border-radius: 15px;
+    }
+
+    .contact-box p {
+      margin: 12px 0;
+      font-size: 18px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #94a3b8;
+    }
+
+    /* Responsive */
+    @media(max-width:768px) {
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav ul {
+        margin-top: 10px;
+      }
+
+      nav ul li {
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h2>Portfolio</h2>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <div class="hero">
+      <h1>Hello, I'm <span>Neha Gaikwad</span></h1>
+
+      <p>Frontend Developer | Future Full Stack Developer</p>
+
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-box">
+      <p>
+        I am a passionate Frontend Developer with knowledge of HTML,
+        CSS, JavaScript, and Bootstrap. I enjoy creating responsive
+        and modern websites with clean UI designs.
+      </p>
+
+      <br>
+
+      <p>
+        Currently, I am improving my development skills and working
+        toward becoming a Full Stack Developer.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-container">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Bootstrap</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">Frontend Development</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-container">
+
+      <div class="project-card">
+        <h3>College Website</h3>
+
+        <p>
+          Responsive college website developed using HTML, CSS,
+          JavaScript, and Bootstrap.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+
+        <p>
+          Personal portfolio website showcasing my skills,
+          projects, and contact information.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Landing Page</h3>
+
+        <p>
+          Modern landing page with attractive UI and responsive
+          design for all devices.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-box">
+      <p>📧 neha@gmail.com</p>
+      <p>📱 +91 9876543210</p>
+      <p>📍 Mumbai, India</p>
+
+      <br>
+
+      <button class="btn" onclick="showMessage()">
+        Say Hello
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Neha Gaikwad | All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showMessage() {
+      alert("Thank you for visiting my portfolio website!");
+    }
+  </script>
+
+</body>
+
+</html>

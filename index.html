@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neha Gaikwad Portfolio</title>
+</head>
+</body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color:#111827;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color:#111827;
+      color: whitesmoke;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    section {
+      padding: 50px 10%;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #111827;
+      margin-bottom: 20px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skill {
+      background-color:#03AED2;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    .project-card {
+      background-color: #f9fafb;
+      padding: 20px;
+      border-left: 5px solid #03AED2;
+      margin-top: 15px;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #03AED2;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color:#CA5995;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #111827;
+      color: white;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 30px 5%;
+      }
+
+      header h1 {
+        font-size: 32px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <br>
+  <header>
+    <h1>Neha Gaikwad</h1>
+    <p>Frontend Developer Future Full Stack Developer</p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+<br>
+  <section id="about">
+    <div class="card">
+      <h2>About Me</h2>
+
+      <p>
+        Hello! I am Neha Gaikwad. I have basic knowledge of frontend
+        development including HTML, CSS, JavaScript, and Bootstrap.
+        I completed a frontend development course in college and worked
+        on group projects related to website design.
+      </p>
+
+      <p style="margin-top:15px;">
+        I am currently improving my skills and planning to become a
+        Full Stack Developer by working on real-world projects.
+      </p>
+
+      <button onclick="showMessage()">Click Me</button>
+    </div>
+  </section>
+
+  <br>
+  <section id="skills">
+    <div class="card">
+      <h2>Skills</h2>
+
+      <div class="skills-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">Frontend Development</div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <section id="education">
+    <div class="card">
+      <h2>Education</h2>
+
+      <p><strong>Degree:</strong> Bachelor’s Degree In Computer Science</p>
+      <p><strong>Field:</strong>  BSC Computer Science </p>
+      <p><strong>College:</strong> Sk collage of science and commerce</p>
+      <p><strong>Course:</strong> Frontend Development Course Completed</p>
+    </div>
+  </section>
+
+  <br>
+  <section id="projects">
+    <div class="card">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>College Website Project</h3>
+        <p>
+          Designed a responsive college website using HTML, CSS,
+          JavaScript, and Bootstrap as part of a group project.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>
+          Created a personal portfolio website to showcase skills,
+          education, and projects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contact Me</h2>
+
+      <p>Email: nevam@gmail.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Location: Mumbai, India</p>
+      <p>State:Maharashtra</p>
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>© 2026 Neha Gaikwad  All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Welcome to my portfolio website!");
+    }
+  </script>
+
+</body>
+</html>
